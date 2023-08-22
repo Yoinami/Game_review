@@ -1,58 +1,121 @@
 body {
-    background-color: black;
+    background-color: #050629;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #navigation-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    font-size: large;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    margin-bottom: 20px;
+    padding: 20px;
+    z-index: 1;
 }
 #navigation-flex > div {
     white-space: nowrap;
     overflow: hidden;
 }
-.container {
-    width: 90%;
-    height: auto;
-    margin: 20px auto;
+#navigation-flex > div:hover {
+    box-shadow: 0 3px white;
 }
-.slider-wrap {
-    position: relative;
-    max-width: 48rem;
-    margin: 0 auto;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
-}
-.slider {
+.flex {
     display: flex;
-    overflow-x: hidden;
-    aspect-ratio: 16/9;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}
+.container {
+    position: relative;
+    display: block;
+    width: 450px;
+    height: auto;
+    margin-top: 80px;
+}
+.container > p {
+    font-size: large;
+}
+.mySlides {
+    display: none;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.mySlides > img {
+    width: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
-.slider img {
-    scroll-snap-align: start;
-    object-fit: cover;
+.mySlides > img:hover, .container:hover {
+    border-radius: 0;
+    transition: 1s ease;
 }
-.slider-nav {
-    display: flex;
+.caption {
+    visibility: hidden;
     position: absolute;
-    bottom: 10%;
-    width: 100px;
+    display: flex;
+    transition: 0.1s ease;
+    background-image: linear-gradient(rgba(0,0,0,0), black);
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    display: flex;
     justify-content: space-around;
-    transform: translateX(-50%);
-    left: 50%;
-    z-index: 1;
+    align-items: last baseline;
+    border-radius: 10px;
+    user-select: none;
 }
-.slider-nav a {
-    width: 5px;
+.caption > div > img {
+    height: 1em;
+    width: auto;
+}
+small {
+    color: rgb(152, 152, 152);
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 5px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.next {
+    right: 0;
+}
+.next:hover, .prev:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.dot {
+    cursor: pointer;
     height: 5px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 3px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    user-select: none;
 }
-.slider a:hover {
-    opacity: 1;
+  
+.active, .dot:hover {
+    background-color: lightblue;
+}
+.mySlides {
+    animation-name: fade;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
 }

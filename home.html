@@ -17,20 +17,51 @@
     </div>
     
 
-    <div class="container">
-        <div class="slider-wrap">
-            <div class="slider">
-                <img id="slide1" src="image/genshin_impact.jpeg">
-                <img id="slide2" src="image/elden-ring.jpeg">
-                <img id="slide3" src="image/hollow-knight.jpeg">
+    <div class="flex">
+        <div class="container">
+            <p>Recommendations</p>
+
+            <!--Slides-->
+            <div class="mySlides" onmouseover="showText()" onmouseleave="dontText()">
+                <div class="caption"> 
+                    <p>Genshin Impact</p>
+                    <div><img src="editorial/star.png" alt="star"> 9.0/10</div>
+                    <p><small>Action Role Playing</small></p>
+                </div>
+                <img src="image/genshin_impact.jpeg" alt="genshin_impact">
             </div>
-            <div class="slider-nav">
-                <a href="#slide1"></a>
-                <a href="#slide2"></a>
-                <a href="#slide3"></a>
+
+            <div class="mySlides" onmouseover="showText()" onmouseleave="dontText()">
+                <div class="caption"> 
+                    <p>Elden Ring</p>
+                    <div><img src="editorial/star.png" alt="star"> 10/10</div>
+                    <p><small>Action Role Playing</small></p>
+                </div>
+                <img src="image/elden-ring.jpeg" alt="genshin_impact">
             </div>
-        </div>
+
+            <div class="mySlides" onmouseover="showText()" onmouseleave="dontText()">
+                <div class="caption"> 
+                    <p>Hollow Knight</p>
+                    <div><img src="editorial/star.png" alt="star"> 9.4/10</div>
+                    <p><small>Metroidvania</small></p>
+                </div>
+                <img src="image/hollow-knight.jpeg" alt="genshin_impact">
+            </div>
+
+            <!--Arrow Keys-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <!--For Dots Under Slide Show-->
+            <div style="text-align:center">
+                <a class="dot" onclick="currentSlide(1)"></a>
+                <a class="dot" onclick="currentSlide(2)"></a>
+                <a class="dot" onclick="currentSlide(3)"></a>
+            </div>
+        </div> 
     </div>
-    
+
+    <script src="home.js"></script>
 </body>
 </html>

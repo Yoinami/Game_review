@@ -1,17 +1,44 @@
-var img = document.getElementById('img');
+let slideIndex = 1;
+showSlides(slideIndex);
 
-var slides = ['genshin_impact.jpeg','elden-ring.jpeg','hollow-knight.jpeg'];
-
-var Start=0;
-
-function slider(){
-    if(Start<slides.length) {
-        Start=Start+1;
-    }
-    else{
-        Start=1;
-    }
-    console.log(img);
-    img.innerHTML = "<img src=image/"+slides[Start-1]+">";  
+function plusSlides(n) {
+    if (n === undefined) {
+        n = 1;
+      }
+    showSlides(slideIndex += n);
 }
-setInterval(slider,5000);
+
+function changeSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+setInterval(plusSlides, 8000);
+function showText() {
+    let text = document.getElementsByClassName("caption");
+    let i;
+    for(i=0; i < text.length; i++) {
+        text[i].style.visibility = "visible"
+    }
+}
+function dontText() {
+    let text = document.getElementsByClassName("caption");
+    let i;
+    for(i=0; i < text.length; i++) {
+        text[i].style.visibility= "hidden";
+    }
+}

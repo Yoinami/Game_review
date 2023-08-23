@@ -1,8 +1,14 @@
+/* 
+This is the body duh
+*/
 body {
     background-color: #050629;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* 
+Navigation that is fixed to the view port
+*/
 #navigation-flex {
     display: flex;
     flex-direction: row;
@@ -24,6 +30,9 @@ body {
 #navigation-flex > div:hover {
     box-shadow: 0 3px white;
 }
+/* 
+This is the slider image content
+*/
 .flex {
     display: flex;
     width: 100%;
@@ -70,19 +79,22 @@ body {
     align-items: last baseline;
     border-radius: 10px;
     user-select: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .caption > div > img {
     height: 1em;
     width: auto;
 }
-small {
+.type {
     color: rgb(152, 152, 152);
+    font-size: small;
 }
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    padding: 5px;
+    padding: 10px;
     margin: 0;
     color: white;
     font-weight: bold;
@@ -116,6 +128,81 @@ small {
 }
 .mySlides {
     animation-name: fade;
-    animation-duration: 0.25s;
+    animation-duration: 1;
     animation-timing-function: ease-in-out;
+}
+@keyframes fade {
+    from {opacity: .1;}
+    to {opacity: 1;}
+}
+/* 
+More Content section
+*/
+.below-container {
+    width: 80%;
+    margin: auto;
+}
+.below-container-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.individual-content {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    background-color: #313475;
+    margin: 10px 5px;
+    transition: 0.25s ease-in-out;
+    box-shadow: 0 0 10px 3px black ;
+    user-select: none;
+}
+.individual-content:hover {
+    transform: scale(1.05);
+}
+.individual-content > img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.under-cap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.under-cap > div {
+    flex-wrap: wrap;
+    display: flex;
+}
+.individual-content > .type > p {
+    padding-left: 20px;
+}
+.individual-content > div  p {
+    font-size: smaller;
+    border: 0;
+    width: max-content;
+    margin: 0;
+    padding-top: 2px;
+}
+.icon {
+    height: 1em;
+    padding-right: 3px;
+}
+.type {
+    padding-bottom: 5px;
+}
+
+/*
+Footer section
+*/
+
+.foot {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+}
+#text {
+    font-size: x-small;
 }

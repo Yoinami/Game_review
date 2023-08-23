@@ -26,7 +26,7 @@
                 <div class="caption"> 
                     <p>Genshin Impact</p>
                     <div><img src="editorial/star.png" alt="star"> 9.0/10</div>
-                    <p><small>Action Role Playing</small></p>
+                    <p class="type">Action Role Playing</p>
                 </div>
                 <img src="image/genshin_impact.jpeg" alt="genshin_impact">
             </div>
@@ -35,7 +35,7 @@
                 <div class="caption"> 
                     <p>Elden Ring</p>
                     <div><img src="editorial/star.png" alt="star"> 10/10</div>
-                    <p><small>Action Role Playing</small></p>
+                    <p class="type">Action Role Playing</p>
                 </div>
                 <img src="image/elden-ring.jpeg" alt="genshin_impact">
             </div>
@@ -44,7 +44,7 @@
                 <div class="caption"> 
                     <p>Hollow Knight</p>
                     <div><img src="editorial/star.png" alt="star"> 9.4/10</div>
-                    <p><small>Metroidvania</small></p>
+                    <p class="type">Metroidvania</p>
                 </div>
                 <img src="image/hollow-knight.jpeg" alt="genshin_impact">
             </div>
@@ -53,6 +53,11 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             
+            <!--Back Extra Info-->
+            <div class="extra-info">
+
+            </div>
+
             <!--For Dots Under Slide Show-->
             <div style="text-align:center">
                 <a class="dot" onclick="currentSlide(1)"></a>
@@ -61,6 +66,68 @@
             </div>
         </div> 
     </div>
+
+    <div class="below-container">
+        <p>More Contents</p>
+        <div class="below-container-flex">
+            <div class="individual-content">
+                <img src="extra/rain_world.jpeg" alt="rain_world">
+                <div class="under-cap">
+                    <p>Rain World</p>
+                    <div>
+                        <img class="icon" src="editorial/small-star2.png">
+                        <p>7.8/10</p>
+                    </div>
+                </div>
+                <div class="type"><p>Metroidvania</p></div>
+            </div>
+
+            <div class="individual-content">
+                <img src="extra/dota2.jpeg" alt="dota2">
+                <div class="under-cap">
+                    <p>Dota 2</p>
+                    <div>
+                        <img class="icon" src="editorial/small-star2.png">
+                        <p>9.2/10</p>
+                    </div>
+                </div>
+                <div class="type"><p>MOBA</p></div>
+            </div>
+
+            <div class="individual-content">
+                <img src="extra/terraria.jpeg" alt="terraria">
+                <div class="under-cap">
+                    <p>Terraria</p>
+                    <div>
+                        <img class="icon" src="editorial/small-star2.png">
+                        <p>9/10</p>
+                    </div>
+                </div>
+                <div class="type"><p>2D Sand-box</p></div>
+            </div>
+
+            <div class="individual-content">
+                <img src="extra/minecraft.jpeg" alt="minecraft">
+                <div class="under-cap">
+                    <p>Minecraft</p>
+                    <div>
+                        <img class="icon" src="editorial/small-star2.png">
+                        <p>9.7/10</p>
+                    </div>
+                </div>
+                <div class="type"><p>3D Sand-box</p></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            
+            <div id="text">&copy; 2023 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+VAT included in all prices where applicable.</div>
+            
+        </div>
+    </footer>
 
     <script src="home.js"></script>
 </body>

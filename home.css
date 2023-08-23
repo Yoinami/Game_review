@@ -33,12 +33,17 @@ Navigation that is fixed to the view port
 /* 
 This is the slider image content
 */
+
+.wholeslider-wrap {
+    position: relative;
+}
 .flex {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 100%;
     justify-content: center;
     align-content: center;
+    margin: auto;
 }
 .container {
     position: relative;
@@ -55,9 +60,12 @@ This is the slider image content
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    
+    overflow: hidden;
 }
 .mySlides > img {
     width: 100%;
+    min-height: 250px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -135,11 +143,91 @@ This is the slider image content
     from {opacity: .1;}
     to {opacity: 1;}
 }
+
+/*
+Black Box Section
+*/
+.blackbox {
+    width: 40%;
+    background-image: linear-gradient(-45deg, rgba(252, 252, 252, 0), #555bc070);
+    background-color: #060833;
+    height: auto;
+    margin-top: 140px;
+    user-select: none;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.bb-title {
+    font-size: large;
+}
+.bb-name {
+    font-size: xx-large;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td > div {
+    margin: 5px;
+    font-size: small;
+}
+.rate1, .rate2, .rate3 {
+    border: #313475 solid 1px;
+    padding: 0;
+    text-align: center;
+}
+.bb-tag-contain > span{
+    background-color: #171DC2;
+    border-radius: 4px;
+    position: relative;
+    padding: 3px;
+    margin-top: 3px;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: small;
+}
+.bb-tag-contain {
+    padding: 5px 0;
+}
+.bb-tag-contain > div, .av {
+    font-size: small;
+}
+.slide-moreinfo {
+    padding: 5px 10px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+.available-platform {
+    display: flex;
+    margin: auto;
+    align-items:center;
+    justify-content: flex-start;
+}
+.window-plat {
+    background-image: url(editorial/window-os.png);
+}
+.playstation-plat {
+    background-image: url(editorial/playstation.png);
+}
+.xbox-plat {
+    background-image: url(editorial/xbox.png);
+}
+.platform {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+.av {
+    margin-right: 10px;
+}
 /* 
 More Content section
 */
 .below-container {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 .below-container-flex {
@@ -159,6 +247,8 @@ More Content section
 }
 .individual-content:hover {
     transform: scale(1.05);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0), #4586e0be);
+
 }
 .individual-content > img {
     width: 100%;
@@ -204,5 +294,5 @@ Footer section
     align-items: center;
 }
 #text {
-    font-size: x-small;
+    font-size: small;
 }

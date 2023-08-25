@@ -38,14 +38,15 @@ This is the slider image content
     width: 80%;
     position: relative;
     margin: auto;
+    max-width: 940px;
 }
 .flex {
     display: flex;
     width: 100%;
+    
     height: 100%;
     justify-content: center;
     align-content: center;
-    margin: auto;
     overflow: hidden;
 }
 .container {
@@ -175,11 +176,13 @@ Black Box Section
 }
 table {
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
 }
 td > div {
     margin: 5px;
     font-size: small;
+    overflow: hidden;
 }
 .rate1, .rate2, .rate3 {
     border: #313475 solid 1px;
@@ -213,6 +216,10 @@ td > div {
     align-items:center;
     justify-content: flex-start;
 }
+/*
+avaliable 
+platforms
+*/
 .window-plat {
     background-image: url(editorial/window-os.png);
 }
@@ -222,6 +229,19 @@ td > div {
 .xbox-plat {
     background-image: url(editorial/xbox.png);
 }
+.mac-plat {
+    background-image: url(editorial/mac-os.png);
+}
+.android-plat {
+    background-image: url(editorial/andriod.png);
+}
+.ios-plat {
+    background-image: url(editorial/ios.png);
+}
+.switch-plat {
+    background-image: url(editorial/switch.png);
+}
+
 .platform {
     display: inline-block;
     height: 20px;

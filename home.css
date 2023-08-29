@@ -64,14 +64,13 @@ This is the slider image content
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    
     overflow: hidden;
+    border-radius: 10px;
 }
 .mySlides > img {
     width: 100%;
     min-height: 250px;
     object-fit: cover;
-    border-radius: 10px;
 }
 .mySlides > img:hover, .container:hover {
     border-radius: 0;
@@ -291,8 +290,8 @@ More Content section
     flex-wrap: wrap;
     display: flex;
 }
-.individual-content > .type > p {
-    padding-left: 20px;
+.individual-content > .type{
+    padding-left: 10%;
 }
 .individual-content > div  p {
     font-size: smaller;
@@ -322,4 +321,24 @@ Footer section
 }
 #text {
     font-size: small;
+}
+
+@media screen and (max-width: 750px) {
+    .blackbox {
+        display: none;
+    }
+    .individual-content {
+        width: 80%;
+        margin: 20px auto;
+
+    }
+    .wholeslider-wrap {
+        width: 90%;
+    }
+    .next {
+        right: 0px;
+    }
+    .prev {
+        left: 0px
+    }
 }

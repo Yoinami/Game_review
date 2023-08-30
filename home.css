@@ -9,26 +9,42 @@ body {
 /* 
 Navigation that is fixed to the view port
 */
-#navigation-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: large;
-    background-color: black;
+#center-navigation {
+    margin: auto;
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     position: fixed;
     margin-bottom: 20px;
     padding: 20px;
     z-index: 1;
+    background-color: black;
+}
+#navigation-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: large;
+    
+    width: 80%;
+    margin: auto;
+    user-select: none;
+    
+    
 }
 #navigation-flex > div {
     white-space: nowrap;
     overflow: hidden;
+    cursor: pointer;
+    margin: 0 20px;
+    font-weight: bolder;
 }
-#navigation-flex > div:hover {
+#navigation-flex > .other_pages:hover {
     box-shadow: 0 3px white;
+}
+.current_page {
+    color: #171DC2;
 }
 /* 
 This is the slider image content

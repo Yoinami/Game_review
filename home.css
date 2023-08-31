@@ -37,6 +37,7 @@ Navigation that is fixed to the view port
     white-space: nowrap;
     overflow: hidden;
     cursor: pointer;
+    transition: 0.25s ease-in-out;
     margin: 0 20px;
     font-weight: bolder;
 }

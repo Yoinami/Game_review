@@ -36,12 +36,16 @@ Navigation that is fixed to the view port
     margin: auto;
     margin-top: 80px;
 }
-.winner-img-container > img {
+#winner-img-container > img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-.winner-img-container {
-    border-image: linear-gradient(45deg ,#f6b73c, #ffffff) 110;
-    border-width: 4px;
+#winner-img-container {
+    border-image: linear-gradient(45deg ,#f6b73c, #ffffff) 10;
+    border-width: 10px;
+    margin: 0;
+    padding: 0;
     border-style: solid;
 }
 .winner-caption {

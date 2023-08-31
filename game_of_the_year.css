@@ -1,0 +1,51 @@
+/* 
+This is the body duh
+*/
+body {
+    background-color: #050629;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+Navigation that is fixed to the view port
+*/
+#navigation-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: large;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    margin-bottom: 20px;
+    padding: 20px;
+    z-index: 1;
+}
+#navigation-flex > div {
+    white-space: nowrap;
+    overflow: hidden;
+}
+#navigation-flex > div:hover {
+    box-shadow: 0 3px white;
+}
+
+.center-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+}
+.winner-img-container > img {
+    width: 100%;
+}
+.winner-img-container {
+    border-image: linear-gradient(45deg ,#f6b73c, #ffffff) 110;
+    border-width: 4px;
+    border-style: solid;
+}
+.winner-caption {
+    text-align: center;
+    margin: auto;
+    font-size: x-large;
+}

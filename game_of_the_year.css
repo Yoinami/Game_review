@@ -5,36 +5,97 @@ body {
     background-color: #050629;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 /* 
 Navigation that is fixed to the view port
 */
-#navigation-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: large;
-    background-color: black;
+#center-navigation {
+    margin: auto;
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     position: fixed;
     margin-bottom: 20px;
     padding: 20px;
     z-index: 1;
+    background-color: black;
+}
+#navigation-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: large;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    user-select: none;
+    
 }
 #navigation-flex > div {
-    white-space: nowrap;
     overflow: hidden;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+    margin: 0 20px;
+    font-weight: bolder;
 }
-#navigation-flex > div:hover {
+.super_nav {
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    left: 25%;
+    top: 120%;
+    max-width: 130px;
+    box-shadow: 5px 5px 5px black;
+    background-color: #060833;
+}
+.submenu-item {
+    white-space: nowrap;
+    padding: 10px 20px;
+    display: block;
+}
+.submenu-item:hover {
+    background-color: #0C84F2;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#navigation-flex > .other_pages:hover {
     box-shadow: 0 3px white;
 }
+.current_page {
+    color: #0C84F2;
+    box-shadow: 0 3px #0C84F2;
+}
 
+/*the strat of a body*/
+
+#whole-div-container {
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+    background-image: url(editorial/footer_bg_gray.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #1C1D42;
+    box-shadow: 0 5px 10px 0 black;
+}
+#bg {
+    background-image: url(editorial/background-shadow.png);
+    background-position: bottom;
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+}
 .center-container {
     width: 80%;
     margin: auto;
-    margin-top: 80px;
+    max-width: 460px;
+    
 }
 #winner-img-container > img {
     width: 100%;
@@ -51,5 +112,40 @@ Navigation that is fixed to the view port
 .winner-caption {
     text-align: center;
     margin: auto;
-    font-size: x-large;
+    padding-top: 20px;
+    font-size: xx-large;
+}
+.header-contain-title {
+    font-size: 80px;
+    width: 80%;
+    margin: auto;
+}
+/*Individual Nominations*/
+.nomination-flex {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 750px;
+}
+.individual-nomination {
+    width: 300px;
+    padding: 10px 5px;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+.image-wraper {
+    border-radius: 10px;
+}
+.image-wraper > img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.name-caption {
+    padding-top: 10px;
+    font-size: large;
+    text-align: center;
 }

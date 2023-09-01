@@ -8,32 +8,98 @@
 </head>
 <body>
     
-    <div id="navigation-flex">
-
-        <div>Article</div>
-        <div>Coming Soon</div>
-        <div>Game of The Year</div>
-    </div>
-    <div class="center-container">
-        <div class="header-contain-title">
-            <p>The Year 2022</p>
-            
-        </div>
-        <div class="winner-container-wrapper">
-            <div id="winner-img-container">
-                <img src="image/elden-ring.jpeg" alt="">
+    <div id="center-navigation">
+        <div id="navigation-flex">
+            <div class="other_pages"><a href="home.html">Review</a></div>
+            <div class="other_pages">Coming Soon</div>
+            <div class="current_page" onmouseover="Appear()" onmouseleave="Disappear()">
+                Game of The Year
             </div>
-            <div class="winner-caption">Winner</div>
+
+            <div class="super_nav" onmouseover="Appear()" onmouseleave="Disappear()">
+                <div class="submenu">
+                    <a href="" class="submenu-item">Year 2022</a>
+                    <a href="" class="submenu-item">Year 2021</a>
+                    <a href="" class="submenu-item">Year 2020</a>
+                    <a href="" class="submenu-item">Year 2019</a>
+                </div>
+            </div>
+
         </div>
+    </div>
 
-        <div class="nomination-container">
-            <div class="nomination-flex">
-                <div class="individual-nomination">
 
+    <div id="whole-div-container">
+        <div id="bg">
+            <div class="header-contain-title">
+                <p>Game of the Year 2022</p>
+            </div>
+            <div class="center-container">
+                
+                <div class="winner-container-wrapper">
+                    <div id="winner-img-container">
+                        <img src="image/elden-ring.jpeg" alt="">
+                    </div>
+                    <div class="winner-caption">Elden Ring</div>
                 </div>
             </div>
         </div>
+        
     </div>
+    <div class="nomination-container" style="padding-top: 40px;">
+        <div style="width: 60%;margin: auto;font-size: 40px; padding: 30px 0;">Nominations</div>
+                <div class="nomination-flex">
+                    <div class="individual-nomination">
+                        <div class="image-wraper">
+                            <img src="image/plaguetale.jpeg" alt="">
+                        </div>
+                        <div class="name-caption">
+                            A Plague Tale: Requiem
+                        </div>
+                    </div>
+
+                    <div class="individual-nomination">
+                        <div class="image-wraper">
+                            <img src="image/godofwar-ragnarok.jpg" alt="">
+                        </div>
+                        <div class="name-caption">
+                            God Of War: Ragnarok
+                        </div>
+                    </div>
+
+                    <div class="individual-nomination">
+                        <div class="image-wraper">
+                            <img src="image/horizon-forbidden-west.webp" alt="">
+                        </div>
+                        <div class="name-caption">
+                            Horizon Forbidden West
+                        </div>
+                    </div>
+
+                    <div class="individual-nomination">
+                        <div class="image-wraper">
+                            <img src="image/stray.jpeg" alt="">
+                        </div>
+                        <div class="name-caption">
+                            Stray
+                        </div>
+                    </div>
+
+                    <div class="individual-nomination">
+                        <div class="image-wraper">
+                            <img src="image/xenoblade-chronicles3.jpeg" alt="">
+                        </div>
+                        <div class="name-caption">
+                            Xenoblade Chronicles 3
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+            </div>
+    <script type="module" src="js-lib/confetti.js"></script>
     <script src="game_of_the_year.js"></script>
 </body>
 </html>

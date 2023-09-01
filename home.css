@@ -31,7 +31,6 @@ Navigation that is fixed to the view port
     margin: auto;
     user-select: none;
     
-    
 }
 #navigation-flex > div {
     white-space: nowrap;
@@ -44,8 +43,13 @@ Navigation that is fixed to the view port
 #navigation-flex > .other_pages:hover {
     box-shadow: 0 3px white;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .current_page {
-    color: #171DC2;
+    color: #0C84F2;
+    box-shadow: 0 3px #0C84F2;
 }
 /* 
 This is the slider image content

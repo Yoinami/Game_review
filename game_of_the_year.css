@@ -7,70 +7,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
-/* 
-Navigation that is fixed to the view port
-*/
-#center-navigation {
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    position: fixed;
-    margin-bottom: 20px;
-    padding: 20px;
-    z-index: 1;
-    background-color: black;
-}
-#navigation-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-size: large;
-    position: relative;
-    width: 80%;
-    margin: auto;
-    user-select: none;
-    
-}
-#navigation-flex > div {
-    overflow: hidden;
-    cursor: pointer;
-    transition: 0.25s ease-in-out;
-    margin: 0 20px;
-    font-weight: bolder;
-}
-.super_nav {
-    display: block;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    left: 25%;
-    top: 120%;
-    max-width: 130px;
-    box-shadow: 5px 5px 5px black;
-    background-color: #060833;
-}
-.submenu-item {
-    white-space: nowrap;
-    padding: 10px 20px;
-    display: block;
-}
-.submenu-item:hover {
-    background-color: #0C84F2;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-#navigation-flex > .other_pages:hover {
-    box-shadow: 0 3px white;
-}
-.current_page {
-    color: #0C84F2;
-    box-shadow: 0 3px #0C84F2;
-}
 
 /*the strat of a body*/
 
@@ -86,7 +22,7 @@ a {
     box-shadow: 0 5px 10px 0 black;
 }
 #bg {
-    background-image: url(editorial/background-shadow.png);
+    background-image: url(editorial/);
     background-position: bottom;
     padding-bottom: 30px;
     background-repeat: no-repeat;

@@ -1,25 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-html,body{
-  display: grid;
-  height: 100%;
-  place-items: center;
-  text-align: center;
-  background: #000;
-}
 .container{
   position: relative;
-  width: 400px;
-  background: #111;
+  width: 90%;
+  background: #0a1221;
   padding: 20px 30px;
-  border: 1px solid #444;
-  border-radius: 5px;
+  border: 1px solid #12242a;
+  border-radius: 2px;
   display: flex;
+  margin: 30px auto;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -66,19 +54,19 @@ input#rate-5:checked ~ label{
   text-shadow: 0 0 20px #952;
 }
 #rate-1:checked ~ form header:before{
-  content: "I just hate it ";
-}
-#rate-2:checked ~ form header:before{
   content: "I don't like it ";
 }
+#rate-2:checked ~ form header:before{
+  content: "It's meh ";
+}
 #rate-3:checked ~ form header:before{
-  content: "It is awesome ";
+  content: "It's ok ";
 }
 #rate-4:checked ~ form header:before{
-  content: "I just like it ";
+  content: "I like it ";
 }
 #rate-5:checked ~ form header:before{
-  content: "I just love it ";
+  content: "I love it ";
 }
 .container form{
   display: none;
@@ -87,11 +75,11 @@ input:checked ~ form{
   display: block;
 }
 form header{
-  width: 100%;
+  width: 80%;
   font-size: 25px;
   color: #fe7;
   font-weight: 500;
-  margin: 5px 0 20px 0;
+  margin: 20px auto;
   text-align: center;
   transition: all 0.2s ease;
 }

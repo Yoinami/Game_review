@@ -6,6 +6,8 @@
     <title></title>
     <link rel="stylesheet" href="trailer.css">
     <link rel="stylesheet" href="common-css/sub_nav.css">
+    <link rel="stylesheet" href="rating.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
     <div class="whole">
@@ -16,7 +18,7 @@
         <div id="center-navigation">
             <div id="navigation-flex">
                 <div class="other_pages"><a href="home.html">Review</a></div>
-                <div class="other_pages">Coming Soon</div>
+                <div class="other_pages">About Us</div>
                 <div class="current_page" onmouseover="Appear()" onmouseleave="Disappear()">
                     Game of The Year
                 </div>
@@ -34,25 +36,38 @@
         </div>
     
         <div class="main-container">
+            <h1 style="padding-left: 30px;">Dota 2</h1>
             <div class="additional-video-container">
                 <div class="the-video-part">
-                    <video src="video-src/dota2-trailer.webm" autoplay>Video Not Avaliable</video>
-                    <table class="table">
-                        <tr class="rating">
-                            <td class="rate1">
-                                <div>Google Play</div>
-                                <div>4.2/5</div>
-                            </td>
-                            <td class="rate2">
-                                <div>IGN</div>
-                                <div>9/10</div>
-                            </td>
-                            <td class="rate3">
-                                <div>Open Critics</div>
-                                <div>80%</div>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="slides">
+                        <video src="video-src/dota2-trailer.webm" controls>
+                        Video Not Avaliable
+                        </video>
+                    </div>
+                    <div class="slides">
+                        <img src="image/dota2-extra1.jpg" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="image/dota2-extra2.jpg" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="image/dota2-extra3.jpg" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="image/dota-extra4.jpg" alt="">
+                    </div>
+                    <div class="pointer" style="position: relative;">
+                        <div class="thumbnail" id="data">
+                            <div class="thumbnail-i" onclick="changeSlide(1)"><img src="image/dota-vid-t.jpg" alt=""><div id="video-player"></div></div>
+                            <div class="thumbnail-i" onclick="changeSlide(2)"><img src="image/dota2-extra1.jpg" alt=""></div>
+                            <div class="thumbnail-i" onclick="changeSlide(3)"><img src="image/dota2-extra2.jpg" alt=""></div>
+                            <div class="thumbnail-i" onclick="changeSlide(4)"><img src="image/dota2-extra3.jpg" alt=""></div>
+                            <div class="thumbnail-i" onclick="changeSlide(5)"><img src="image/dota-extra4.jpg" alt=""></div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    
                 </div>
     
                 <div class="info-part">
@@ -93,6 +108,22 @@
                 </div>
             </div>
             <div id="aboutThisGame" class="game_page_autocollapse" style="max-height: none;">
+                <table class="table">
+                    <tr class="rating">
+                        <td class="rate1">
+                            <div>Google Play</div>
+                            <div>4.2/5</div>
+                        </td>
+                        <td class="rate2">
+                            <div>IGN</div>
+                            <div>9/10</div>
+                        </td>
+                        <td class="rate3">
+                            <div>Open Critics</div>
+                            <div>80%</div>
+                        </td>
+                    </tr>
+                </table>
                 <div id="game_area_description" class="game_area_description">
                     <h2>About This Game</h2>
                     <strong>The most-played game on Steam.</strong><br>
@@ -123,9 +154,88 @@
                     matched with the right players each game.						</div>
             </div>
         </div>
+        <div class="container">
+            <div class="post">
+              <div class="text">Thanks you for the rating!</div>
+              <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget"> 
+              <input type="radio" name="rate" id="rate-5">
+              <label for="rate-5" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-4">
+              <label for="rate-4" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-3">
+              <label for="rate-3" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-2">
+              <label for="rate-2" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-1">
+              <label for="rate-1" class="fas fa-star"></label>
+              <form action="#">
+                <header></header>
+                <div class="textarea">
+                  <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit">Post</button>
+                </div>
+              </form>
+            </div>
+        </div>
+
+        <div class="comment-section">
+            <div class="comment-indiv-container">
+                <div class="comment-head">
+                    deep red -100 pk 
+                </div>
+                <div class="comment-text-area">
+                    Alright.... so here is my dota 2 review after playing almost 6000 hours over the span of 3 years.
+                    1. general thoughts and how i started:
+                    <br>
+                    I was 15 when a friend recommended dota 2 to me. Back then i wouldnt ever have imagined how much time this game would take from me. At some point i was playing 12+ hours a day for weeks. Now im approaching my 19th birthday and im kind of conflicted on what kind of impact this game had on my life. I learned a lot about myself and generally speaking matured a lot regarding interacting with other humans. Dota isnt just a game, Dota is something else, something i have never experienced even when i was addicted to a mmorpg when i was 9-13. You learn how to learn, how to improve, how to win and how to lose. The most important thing dota teached me was how emotions impact your performance, and that saying "nothing" is sometimes the best thing to do. In real life no one really teaches you stuff like that since people are kind of used to dealing with emotional ♥♥♥♥♥♥♥♥.
+                    <br>
+                    2. Did i waste my youth?:
+                    So this sounds a bit depressing but this is a thought that i had sometimes. but realisticially speaking, knowing myself, im really unsure of how much my life wouldve been different if i never started dota. I asume i wouldve been a bit further regarding social contacts but career/school-wise i highly doubt that it wouldve made a big difference. You gotta be realistic when thinking about stuff like this. Im not a very social guy. I dont like to put work into stuff i dont care about. The thoughts "lets learn music" or "lets study" wouldnt have EVER crossed my mind when i was 15. Im pretty sure if i wouldnt have started with dota i wouldve just been gooning around the city and abuse drugs, since thats a lot of fun to me. Back then i actually never even thought about working on something to improve, that whole dimension of "improving" wasnt even there for me. I just went to school got home and did fun stuff sometimes. Thats it. No goals. No aspiration, nothing. Dota changed that.
+                    <br>
+                    3. time invested into dota2:
+                    EVERY dota player that has spent more than 1000 hours into this game has had that thought of "oh man i shouldve learned something with this time.... i couldve been amazing now.." at some point. But everyone is disregarding the fact that grinding dota is something VERY EASY and comfortable to do, unlike studying or learning an instrument. Just think about what kind of game dota 2 is that spending 1000s of hours is something you do with pleasure. It's kind of insane thinking about it. Once i started studying more for school again i realized how much ♥♥♥♥♥♥♥ time 100 hours is. I garantue you that you will be a top student if youd put 20 hours a week into studying outside of school. But the big difference is that dota is just so much more fun and REWARDING.
+                    <br>
+                    REWARDING: dota 2 is ♥♥♥♥♥♥♥ REWARDING. you learn a new hero -> BAMM MMR. you start understanding how to farm -> M . M . R
+                    <br>
+                    YOUR RANK GOES ♥♥♥♥♥♥♥ UP. IT FEELS AMAZING. at school you get an A and you smile for about 10 minutes and then youre back to being miserable. theres no punishment for being mediocre. At least thats how i feel right now and im graduating this year(grades are OK(kinda good, not great)).
+                    <br>
+                    ReasoN I WROTE THIS: im downloading dota right now because my laptop is REALLY ♥♥♥♥♥♥ up adn deletes files something, so i needed something to do
+                    <br>
+                    <br>
+                    <br>
+                    CONCLUSION: AMAZING GAME, EATS ALL YOUR TIME, YOU WILL HAVE FUN(if you are competetive)
+                    hope someone will ever read this lol hit me up if you wanna chat
+                </div>
+                <div class="helpful-buttons">
+
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            const btn = document.querySelector("button");
+            const post = document.querySelector(".post");
+            const widget = document.querySelector(".star-widget");
+            const editBtn = document.querySelector(".edit");
+            btn.onclick = ()=>{
+              widget.style.display = "none";
+              post.style.display = "block";
+              editBtn.onclick = ()=>{
+                widget.style.display = "block";
+                post.style.display = "none";
+              }
+              return false;
+            }
+        </script>
     </div>
     
 
     <script src="js-lib/sub_nav.js"></script>
+    <script src="trailer.js"></script>
 </body>
 </html>

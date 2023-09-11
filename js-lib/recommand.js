@@ -17,13 +17,29 @@ loadDataButton.addEventListener('click', () => {
         })
         .then(data => {
             // Display the JSON data in the pre element
-            console.log(data[100])
-            for (let i = 0; i < data.length; i++) {
-                console.log(typeof data);
-                
-            }
+            key_array = Object.keys(data)
+            let x = Math.floor(Math.random() * key_array.length);
+            console.log(data[key_array[x]]);
+            addContent(data[key_array[x]])
         })
         .catch(error => {
             console.error('Fetch error:', error);
         });
 });
+
+function addContent(dic) {
+    let container = document.getElementsByClassName("below-container-flex");
+    container[0].innerHTML += `
+    <div class="individual-content">
+        <img src="image/${dic["preview-img"]}" alt="${dic["name"]}">
+        <div class="under-cap">
+            <p>${dic["name"]}</p>
+            <div>
+                <img class="icon" src="editorial/small-star2.png">
+                <p>${dic["rating"]}/10</p>
+            </div>
+        </div>
+        <div class="type"><p>${dic["genre"][0]}</p></div>
+    </div>
+    `
+}

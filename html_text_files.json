@@ -1,0 +1,668 @@
+{
+    "100": {
+        "name": "Terraria",
+        "preview-img": "terraria-preview.jpeg",
+        "rating": 9,
+        "background-img": "",
+        "genre": ["2D", "Sandbox", "Action", "Indie", "Adventure", "RPG"],
+        "available-on": ["Win", "Mac", "Phone", "Ios", "PS"],
+        "award": "",
+        "developer": "Re-Logic",
+        "publisher": "Re-Logic",
+        "critics": {
+            "Steam": "10/10",
+            "Common Sense Media": "5/5",
+            "Google": "9/10"
+        },
+        "release-date": "16 May, 2011",
+        "about-game": "Dig, Fight, Explore, Build: The very world is at your fingertips as you fight for survival, fortune, and glory. Will you delve deep into cavernous expanses in search of treasure and raw materials with which to craft ever-evolving gear, machinery, and aesthetics? Perhaps you will choose instead to seek out ever-greater foes to test your mettle in combat? Maybe you will decide to construct your own city to house the host of mysterious allies you may encounter along your travels?\n\nIn the World of Terraria, the choice is yours!\n\nBlending elements of classic action games with the freedom of sandbox-style creativity, Terraria is a unique gaming experience where both the journey and the destination are completely in the player’s control. The Terraria adventure is truly as unique as the players themselves!\n\nAre you up for the monumental task of exploring, creating, and defending a world of your own?\n\nKey features:\nSandbox Play\nRandomly generated worlds\nFree Content Updates",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "101": {
+        "name": "Counter-Strike: Global Offensive",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "102": {
+        "name": "PUBG: BATTLEGROUNDS",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "103": {
+        "name": "Apex Legends",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "104": {
+        "name": "A Plague Tale: Requiem",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "105": {
+        "name": "Stray",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "106": {
+        "name": "It Takes Two",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "107": {
+        "name": "Deathloop",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "108": {
+        "name": "Psychonauts 2",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "109": {
+        "name": "Ratchet & Clank: Rift Apart",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "110": {
+        "name": "Resident Evil Village",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "111": {
+        "name": "Doom Eternal",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "112": {
+        "name": "ARMORED CORE\u2122 VI FIRES OF RUBICON\u2122",
+        "preview-img": "amoured-core-preview.jpeg",
+        "rating": 5,
+        "background-img": "",
+        "genre": ["Action", "Combact", "Mech"],
+        "available-on": ["Win"],
+        "award": "",
+        "developer": "FromSoftware Inc.",
+        "publisher": "FromSoftware Inc.",
+        "critics": {},
+        "release-date": "25 Aug, 2023",
+        "about-game": ["Combining FromSoftware's longstanding expertise in mech games with their signature action gameplay, ARMORED CORE VI FIRES OF RUBICON brings a brand-new action experience to the series.",
+        "",
+        "",
+        "Dynamic, Omni-directional Battles",
+        "Players will pilot their mech in fast-paced, omni-directional battles, taking advantage of massive stages and their mech’s mobility on land and in the air to ensure victory.",
+        "",
+        "",
+        "Customized Parts for Individual Battle Styles",
+        "Customize Armored Core parts to suit a large variety of playstyles. Selecting different parts not only changes the mech’s attacks, but also directly affects its movement and battle style, so each mission can be approached with a unique mech strategy.",
+        "",
+        "",
+        "Thrilling Boss Battles",
+        "Deploy a wide variety of offensive and defensive tactics at close and long range to take down powerful enemy bosses."],
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": ["armoured-core-1.jpg", "armoured-core-2.jpg", "armoured-core-3.jpg", "armoured-core-4.jpeg"],
+        "about-section-img": "armoured-core.webm",
+        "game-related": {}
+    },
+    "113": {
+        "name": "sekiro\u2122: shadows die twice",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "114": {
+        "name": "death stranding director's cut",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "115": {
+        "name": "Resident Evil 2",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "116": {
+        "name": "The Outer Worlds",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "117": {
+        "name": "God of War",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "118": {
+        "name": "Assassin's Creed Odyssey",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "119": {
+        "name": "Celeste",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "120": {
+        "name": "marvel\u2019s spider-man remastered",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "121": {
+        "name": "Monster Hunter: World",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "122": {
+        "name": "Red Dead Redemption 2",
+        "preview-img": "",
+        "rating": 0,
+        "background-img": "",
+        "genre": [],
+        "available-on": [],
+        "award": "",
+        "developer": "",
+        "publisher": "",
+        "critics": {},
+        "release-date": "",
+        "about-game": "",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": [],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "900": {
+        "name": "Minecraft",
+        "preview-img": "minecraft-preview.jpeg",
+        "rating": 9.4,
+        "background-img": "",
+        "genre": ["Sandbox", "Survival"],
+        "available-on": ["Win", "Mac", "Phone", "PS", "XBox", "Ios"],
+        "award": "",
+        "developer": "Mojang Studios",
+        "publisher": "Mojang Studios",
+        "critics": {},
+        "release-date": "18 Nov, 2011",
+        "about-game": "Minecraft is a game made from blocks that you can transform into whatever you can imagine. Play in Creative mode with unlimited resources, or hunt for tools to fend off danger in Survival mode. With seamless cross-platform play on Minecraft: Bedrock Edition you can adventure solo or with friends, and discover an infinite, randomly generated world filled with blocks to mine, biomes to explore and mobs to befriend (or fight). The choice is yours in Minecraft – so play your way!\n\nEXPAND YOUR GAME:\nMinecraft Marketplace - Discover the latest community creations in the marketplace! Get unique worlds, skins, and texture packs from your favorite creators.\n\nSlash commands - Tweak how the game plays: you can give items away, summon mobs, change the time of day, and more.\n\nAdd-Ons - Customize your experience even further with free Add-Ons! If you're more tech-inclined, you can modify data-driven behaviors in the game to create new resource packs.\n\nMULTIPLAYER\n\nRealms and Realms Plus - Play with up to 10 friends cross-platform, anytime, anywhere on Realms, your own private server that we host for you. With Realms Plus, get instant access to over 150 Marketplace items with new additions each month. Share with friends on your own private Realms server. Try a free 30-day trial in-app.\n\nMultiplayer - Play with up to 4 friends with a free Xbox Live account online.\n\nServers - Join free massive multiplayer servers and play with thousands of others! Discover gigantic community-run worlds, compete in unique mini-games and socialize in lobbies full of new friends!\n\nSUPPORT: https://www.minecraft.net/help\nLEARN MORE: https://www.minecraft.net/\n\nMINIMUM RECOMMENDED SPECIFICATION\n\nTo check the requirements for your device visit: https://help.minecraft.net/hc/en-us/articles/4409172223501",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": ["minecraft1.webp", "minecraft2.webp", "minecraft3.webp", "minecraft4.webp"],
+        "about-section-img": "",
+        "game-related": {}
+    },
+    "901": {
+        "name": "Rain World",
+        "preview-img": "rainworld.jpeg",
+        "rating": 7,
+        "background-img": "",
+        "genre": ["Sandbox", "Survival"],
+        "available-on": ["Win", "NS", "PS", "XBox"],
+        "award": "",
+        "developer": "Videocult",
+        "publisher": "Akupara Games",
+        "critics": {},
+        "release-date": "28 Mar, 2017",
+        "about-game": "You are a slugcat. The world around you is full of danger, and you must face it – alone. Separated from your family in a devastating flood, you will need to find food and shelter between terrifying torrential downpours which threaten to drown all life. Climb through the ruins of an ancient civilization, evade the jaws of vicious predators, and discover new lands teeming with strange creatures and buried mysteries. Find your family before something makes a meal of you!\n\nInspired by the simplicity and aesthetics of 16-bit classics, this survival platformer requires clever decision-making, both to catch your own prey and to avoid the jaws of hungry predators. Each ravenous foe in your path will be cunning, vicious and always on the hunt – eager to sink their teeth into you, or even each other. As a small, soft slugcat you must rely on stealth and wit rather than force: learn the ecosystem and turn their strengths to your advantage. Maybe then you can survive… Rain World!",
+        "comment": [
+            {
+                "author": "",
+                "date": "",
+                "content": "",
+                "likes": 0,
+                "dislikes": 0
+            }
+        ],
+        "more-imgs": ["minecraft1.webp", "minecraft2.webp", "minecraft3.webp", "minecraft4.webp"],
+        "about-section-img": "rainworld.mp4",
+        "game-related": {}
+    }
+}

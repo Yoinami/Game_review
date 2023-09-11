@@ -300,6 +300,7 @@ More Content section
 .individual-content > img {
     width: 100%;
     aspect-ratio: 16/9;
+    min-height: 112px;
     object-fit: cover;
 }
 .under-cap {

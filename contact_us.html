@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="Contact_Us_Style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+  <title></title>
+</head>
+<body class="bg">
+  <div class="wrapper">
+    <form id="myForm">
+      <div class="input-box">
+        <input type="text" class="input" id="Firstname" name="Firstname" placeholder="Firstname" required > 
+      </div>
+
+      <div class="input-box"> 
+        <input type="text" class="input"id="Lastname" name="Lastname" placeholder="Lastname" required>
+      </div>
+
+      <div class="input-box">
+        <input type="email" class="input" id="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div class="input-box">
+        <textarea class="input"id="message" name="message"  placeholder="Add decription..." rows="4" cols="50" required></textarea>
+      </div>
+
+      <div>
+      <button id="customAlertButton" type="submit" class="btn"> Submit</button>
+      </div>
+
+      <div id="successMessage" style="display: none;">
+        <p>Form submitted successfully!</p>
+      </div>
+
+    </form>
+  </div>
+  <script>
+     document.getElementById("myForm").addEventListener("submit", function (event) {
+      event.preventDefault(); 
+      const name = document.getElementById("Firstname").value;
+            const email = document.getElementById("email").value;
+            const description = document.getElementById("message").value;
+
+            // Check if all fields are filled
+            if (Firstname && email && message) {
+                // Show a success message
+                alert("Submitted successfully!");
+                location.href = 'home.html';
+            }
+          });
+  </script>
+</body>
+</html>

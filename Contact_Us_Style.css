@@ -1,18 +1,34 @@
 .bg{
-	background-image: url(editorial/test.jpeg);
-	background-position: center;
-	background-size: cover;
-	background-attachment:fixed;
+	background-image: url(editorial/bluebg.jpeg);
 }
 
 
 body{
 	display: flex;
+    flex-direction: column; 
+    font-family: Arial, Helvetica, sans-serif;
 	justify-content: center;
 	align-items: center;
 }
 
+
+#check{
+    display: none;
+}
+
+.icons{
+    font-size: 2.8rem;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+
+}
+
 .wrapper{
+    margin-top: 150px;
+    margin-bottom: 110px;
 	width: 420px;
 	background: transparent;
 	backdrop-filter: blur(5px);
@@ -55,4 +71,40 @@ body{
 	color: #fff;
 	font-weight:600 ;
 	margin-left: 60px;
+}
+
+.foot {
+    
+    width: 90%;
+    line-height: 1.5rem;
+    align-items: center;
+    margin-left: 20px;
+}
+footer {
+    transform: translateY(20px);
+    padding: 50px 0;
+    width: 99VW;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+#text {
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    font-size: small;
+    overflow: hidden;
+}
+.foot a {
+    margin: 0 30px;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+    color: inherit;
+}
+.Social {
+    display: block;
+}
+.focus:hover,
+.focus:focus {
+    cursor: pointer;
+    transform: scale(0.95);
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(170deg) brightness(104%) contrast(97%);
 }

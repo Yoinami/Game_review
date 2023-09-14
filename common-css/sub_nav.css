@@ -2,63 +2,78 @@
 navigation
 */
 
-#center-navigation {
-    margin: auto;
+
+.header {
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 20px;
-    z-index: 1;
-    background-color: rgb(2, 8, 18);
-}
-#navigation-flex {
+    width:100vw;
+    padding: 1.3rem;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-size: large;
-    position: relative;
-    width: 80%;
-    margin: auto;
-    user-select: none;
-    
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
 }
-#navigation-flex > div {
-    overflow: hidden;
-    cursor: pointer;
-    transition: 0.25s ease-in-out;
-    margin: 0 20px;
-    font-weight: bolder;
-}
-.super_nav {
-    background-color: #050629;
-    display: block;
+
+.header::before{
+    content:'';
     position: absolute;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    left: 272px;
-    top: 120%;
-    max-width: 130px;
-    box-shadow: 5px 5px 5px black;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+     background: rgba(0,0,0,0.1); 
+     backdrop-filter: blur(50px); 
+    z-index:-1;
 }
-.submenu-item {
-    white-space: nowrap;
-    padding: 10px 20px;
-    display: block;
-}
-.submenu-item:hover {
-    background-color: #0C84F2;
-}
-a {
+
+.logo{
+    font-size: 2rem;
+    color: #fff;
     text-decoration: none;
-    color: inherit;
+    font-weight: 700;
 }
-#navigation-flex > .other_pages:hover {
-    box-shadow: 0 3px white;
+
+.navbar a{
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    padding: 0 10px;
+    position: relative;
 }
-.current_page {
-    color: #0C84F2;
-    box-shadow: 0 3px #0C84F2;
+
+.navbar a:after{
+    content:'';
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s ease;
+}
+
+.navbar a:hover{
+    transition: .3s ease;
+}
+
+.navbar a:hover:after{
+    width:100%;
+    
+
+}
+.navbar a.active {
+    color: navy;
+    transition: .5s;
+}
+.active::after{
+    content:'';
+    position: absolute;
+    background-color: limegreen;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
 }

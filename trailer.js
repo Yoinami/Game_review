@@ -1,6 +1,11 @@
 let slideIndex = 1;
-showSlides(slideIndex);
 
+
+
+showSlides(slideIndex);
+setInterval(lop=> {
+    plusSlides(0);
+}, 1000)
 function plusSlides(n) {
     if (n === undefined) {
         n = 1;
@@ -24,7 +29,7 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("focus" ,"")
+        dots[i].className = dots[i].className.replace(" focus" ,"")
     }
 
     slides[slideIndex-1].style.display = "block";
@@ -38,5 +43,20 @@ function scroll() {
         elem.scrollBy(200, 0);
     } else {
         elem.scrollBy(-200, 0)
+    }
+}
+
+function seemoreFun() {
+    var seeMore = document.getElementById("seemore");
+    var bbbtn = document.getElementById("moreBtn");
+    console.log("entered");
+    if(seeMore.style.display == "none") {
+        seeMore.style.display = "block";
+        bbbtn.innerHTML = "^";
+        console.log("if");
+    } else {
+        seeMore.style.display = "none";
+        bbbtn.innerHTML = "v";
+        console.log("else");
     }
 }

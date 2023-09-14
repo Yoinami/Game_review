@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="trailer.css">
+    <link rel="stylesheet" href="common-css/sub_nav.css">
+    <link rel="stylesheet" href="rating.css">
+    <link rel="stylesheet" href="common-css/platfrom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="whole">
+        <div class="background">
+            <img src="extra/bg-dota2.jpeg">
+        </div>
+        
+        <div id="center-navigation">
+            <div id="navigation-flex">
+                <div class="other_pages"><a href="home.html">Review</a></div>
+                <div class="other_pages">About Us</div>
+                <div class="current_page" onmouseover="Appear()" onmouseleave="Disappear()">
+                    Game of The Year
+                </div>
+    
+                <div class="super_nav" onmouseover="Appear()" onmouseleave="Disappear()">
+                    <div class="submenu">
+                        <a href="" class="submenu-item">Year 2022</a>
+                        <a href="" class="submenu-item">Year 2021</a>
+                        <a href="" class="submenu-item">Year 2020</a>
+                        <a href="" class="submenu-item">Year 2019</a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="main-container">
+            <h1 style="padding-left: 30px;">Dota 2</h1>
+            <div class="additional-video-container">
+                <div class="the-video-part">
+                    <div class="slides">
+                        <video src="video-src/dota2-trailer.webm" controls>
+                        Video Not Avaliable
+                        </video>
+                    </div>
+                    <div class="slides">
+                        <img src="image/dota2-extra1.jpg" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="image/dota2-extra2.jpg" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="image/dota2-extra3.jpg" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="image/dota-extra4.jpg" alt="">
+                    </div>
+                    <div class="pointer" style="position: relative;">
+                        <div class="thumbnail" id="data">
+                            <div class="thumbnail-i" onclick="changeSlide(1)"><img src="image/dota-vid-t.jpg" alt=""><div id="video-player"></div></div>
+                            <div class="thumbnail-i" onclick="changeSlide(2)"><img src="image/dota2-extra1.jpg" alt=""></div>
+                            <div class="thumbnail-i" onclick="changeSlide(3)"><img src="image/dota2-extra2.jpg" alt=""></div>
+                            <div class="thumbnail-i" onclick="changeSlide(4)"><img src="image/dota2-extra3.jpg" alt=""></div>
+                            <div class="thumbnail-i" onclick="changeSlide(5)"><img src="image/dota-extra4.jpg" alt=""></div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    
+                </div>
+    
+                <div class="info-part">
+                    <div class="image-container">
+                        <img src="extra/dota2.jpeg" alt="">
+                    </div>
+    
+                    <div class="decsription-part">
+                        Every day, millions of players worldwide enter battle as one
+                         of over a hundred Dota heroes. And no matter if it's their 10th 
+                         hour of play or 1,000th, there's always something new to discover. 
+                         With regular updates that ensure a constant evolution of gameplay, 
+                         features, and heroes, Dota 2 has taken on a life of its own.
+                    </div>
+                    <table>
+                        <tr class="release-date">
+                            <th>Release Date: </th>
+                            <td>10 July, 2013</td>
+                        </tr>
+                        <tr>
+                            <th>Developer: </th>
+                            <td>Valve</td>
+                        </tr>
+                        <tr>
+                            <th>Publisher: </th>
+                            <td>Valve</td>
+                        </tr>
+                    </table>
+    
+                    <div class="tags-div">
+                        <span class="genre">Genre Tags:</span>
+                        <span class="tags">Free To Play</span>
+                        <span class="tags">MOBA</span>
+                        <span class="tags">Multiplayer</span>
+                        <span class="tags">PvP</span>
+                        <span class="tags">Strategy</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="aboutThisGame" class="game_page_autocollapse" style="max-height: none;">
+                <div class="saleswrap">
+                    <div class="playthegame">
+                    
+                        Play Dota 2
+                        <div class="available-platform" style="width: fit-content;">
+                            <span class="av" style="font-size: 1rem;">Available Platforms:</span>
+                            <div style="display: inline-block;">
+                                <span class="window-plat platform"></span>
+                                <span class="mac-plat platform"></span>
+                                <span class="switch-plat platform"></span>
+                                <span class="playstation-plat platform"></span>
+                                <span class="xbox-plat platform"></span>
+                            </div>
+                            <button id="officialbutton">
+                                Go to official page
+                            </button>               
+                        </div>
+                        
+                    </div>
+                    <div class="community-wrapper">
+                        <div style="background-color: #4386d8; padding: 10px 20px;">Game Socials</div>
+                        <div class="community-content">
+                            <a href="">Facebook</a>
+                            <a href="">Reddit</a>
+                            <a href="">Twitter</a>
+                            <a href="">Steam page</a>
+                        </div>
+                    </div>
+                </div>
+                <table class="table">
+                    <tr class="rating">
+                        <td class="rate3">
+                            <div>Lumination</div>
+                            <div>9/10</div>
+                        </td>
+                        <td class="rate1">
+                            <div>Google Play</div>
+                            <div>4.2/5</div>
+                        </td>
+                        <td class="rate2">
+                            <div>IGN</div>
+                            <div>9/10</div>
+                        </td>
+                        <td class="rate3">
+                            <div>Open Critics</div>
+                            <div>80%</div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="game_area_description" class="game_area_description">
+                    <h2>About This Game</h2>
+                    <strong>The most-played game on Steam.</strong><br>
+                    Every day, millions of players worldwide enter battle as one of 
+                    over a hundred Dota heroes. And no matter if it's their 10th hour 
+                    of play or 1,000th, there's always something new to discover. 
+                    With regular updates that ensure a constant evolution of gameplay, 
+                    features, and heroes, Dota 2 has truly taken on a life of its own.<br>
+                    <br>
+                    <strong>One Battlefield. Infinite Possibilities.</strong><br>
+                    When it comes to diversity of heroes, abilities, and powerful items, 
+                    Dota boasts an endless array—no two games are the same. Any hero can 
+                    fill multiple roles, and there's an abundance of items to help meet 
+                    the needs of each game. Dota doesn't provide limitations on how to play, 
+                    it empowers you to express your own style.<br><br>
+                    <strong>All heroes are free.</strong><br>
+                    Competitive balance is Dota's crown jewel, and to 
+                    ensure everyone is playing on an even field, the core content of 
+                    the game—like the vast pool of heroes—is available to all players. 
+                    Fans can collect cosmetics for heroes and fun add-ons for the world 
+                    they inhabit, but everything you need to play is already included 
+                    before you join your first match.<br><br>
+                    <strong>Bring your friends and party up.</strong>
+                    <br>Dota is deep, and constantly evolving, 
+                    but it's never too late to join. <br>Learn the ropes playing co-op vs. bots. 
+                    Sharpen your skills in the hero demo mode. Jump into the behavior- 
+                    and skill-based matchmaking system that ensures you'll <br>be
+                    matched with the right players each game.
+                    <h2>Our Review <button onclick="seemoreFun()" id="moreBtn">v</button></h2>
+                    <div id="seemore" style="display: none;">
+                        There’s an adage that the Dota 2 community often quotes when
+                        someone identifies themselves as a new player. “Welcome to Dota 2!” 
+                        They say, with open arms, before concluding with, “You suck.” They're not wrong: 
+                        for the first dozen hours or so, you'll be bombarded with too much information 
+                        and an often unforgiving community of extremely competitive players. But if you 
+                        persevere, Dota 2 becomes one of the most rewarding and tense team-based multiplayer 
+                        experiences anywhere in gaming. It's an achievement owed to uncompromising depth,
+                        a ridiculously generous free-to-play model, and the great features developer
+                        Valve has built up around it.
+                        Valve's artists deserve praise for a crisp and readable style that, after some practice, makes it possible to tell what's going on even in a massive brawl where both teams of five colorful fantasy characters collide and cast spells at once. However, credit for the intimidatingly complex design of Dota 2 belongs to the original Defense of the Ancients mod (known as DOTA) for Warcraft III, which kicked off the MOBA genre. Valve (after hiring on DOTA's key developers) has copied that formula almost to the letter, and as a result Dota 2 has become notorious even among its MOBA peers for its difficulty – and that’s totally justified. It’s a double-edged sword that leads to both a terrifying introduction and a world-class competitive game at the highest levels.
+                        <br><br>
+                        As such, you should not expect to have fun your first day playing... or even your first week. That sounds like a cardinal sin of gaming, but there’s method to this madness. In short, Dota 2 is a deeply layered construct of systems, and to survive you need to understand every single one and how they interact with one another. Everything from learning to work as a member of a coordinated team to the counter-intuitive practice of killing your own AI units to deny the enemy experience points and gold they’d get from doing it themselves, and understanding the effects of hundreds of complex abilities like Bloodseeker’s Rupture (which deals huge damage with every step you take) is a big barrier to entry. Even figuring out which of the 102 heroes (and counting) fits you best is a time-consuming challenge.
+                        <br><br>
+                        Initially, you’re thrown into the deep end to flounder, trying out any hero that makes the slightest bit of sense. The selection is bewildering: playing as Riki with his permanent invisibility from level 6 on is an obvious choice, as it's hard to kill what you can't see. Drow Ranger, perhaps, with her obscene damage the instant she unlocks her "ultimate" ability at level 6, and her slowing Ice Arrows that enable both escapes and setting up a kill. On the more complex end of the spectrum you have choices like the armour-manipulating Templar Assassin, or the incredibly mobile Storm Spirit, who can dart around the battlefield and avoid damage by simply not being in the wrong place at the wrong time. On top of that there are well over 100 items to choose from within each game, each with their own ways of manipulating and enhancing your stats and suite of active abilities.
+                        <br><br>
+                        Your learning has just begun when you've settled on what roles, heroes, and builds suit you best – you also have to adapt based on what other players choose. If the other team plays a Riki, you need to compensate with an emphasis on detection. Go up against Bloodseeker and his hideously powerful Rupture will force you to carry around a Town Portal Scroll to get home in a hurry.
+                        <br><br>
+                        To grasp the subtleties of how heroes interact and fight you have to do more homework on the different kinds of damage and how they’re mitigated; how to prevent one type of spell from affecting you, and when you use that countermeasure; how the different kinds of aggro work, and when you need to manipulate them; the timers (which aren't made visible), and how to optimise your play around them.
+                    </div>
+                    
+                    <h2>TLDR</h2>
+                    Dota 2 deserves its intimidating reputation, and it probably won’t suit you if you’re looking to play casually. There’s a huge time investment before you can even enjoy a game, let alone feel competent at it. But once you start to learn its secrets, there’s a wild and exciting variety of play here that’s unmatched, even by its peers. It’s a challenge of knowledge as well as reflexes, and success is a rush. The fact that it’s completely and totally free to play in the way we wish all free-to-play games could be isn’t just one of the most generous propositions anywhere in gaming, it creates a level playing field where skill and cooperation is paramount. May the best team win.
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="post">
+              <div class="text">Thanks you for the rating!</div>
+              <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget"> 
+              <input type="radio" name="rate" id="rate-5">
+              <label for="rate-5" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-4">
+              <label for="rate-4" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-3">
+              <label for="rate-3" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-2">
+              <label for="rate-2" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-1">
+              <label for="rate-1" class="fas fa-star"></label>
+              <form action="#">
+                <header></header>
+                <div class="textarea" style="border-radius: 10px;">
+                  <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit" style="border-radius: 10px;">Post</button>
+                </div>
+              </form>
+            </div>
+        </div>
+
+        <div class="comment-section">
+            <div class="comment-indiv-container">
+                <div class="comment-head">
+                    deep red -100 pk
+                    <span>22 Nov, 1968</span>
+                    <div style="padding-top: 10px;">
+                        <img src="editorial/small-star2.png" style="height: 1rem;">
+                        <img src="editorial/small-star2.png" style="height: 1rem;">
+                        <img src="editorial/small-star2.png" style="height: 1rem;">
+                        <img src="editorial/small-star2.png" style="height: 1rem;">
+                        <img src="editorial/small-star2.png" style="height: 1rem;">
+                    </div>
+                </div>
+                <div class="comment-text-area">
+                    Alright.... so here is my dota 2 review after playing almost 6000 hours over the span of 3 years.
+                    1. general thoughts and how i started:
+                    <br>
+                    I was 15 when a friend recommended dota 2 to me. Back then i wouldnt ever have imagined how much time this game would take from me. At some point i was playing 12+ hours a day for weeks. Now im approaching my 19th birthday and im kind of conflicted on what kind of impact this game had on my life. I learned a lot about myself and generally speaking matured a lot regarding interacting with other humans. Dota isnt just a game, Dota is something else, something i have never experienced even when i was addicted to a mmorpg when i was 9-13. You learn how to learn, how to improve, how to win and how to lose. The most important thing dota teached me was how emotions impact your performance, and that saying "nothing" is sometimes the best thing to do. In real life no one really teaches you stuff like that since people are kind of used to dealing with emotional ♥♥♥♥♥♥♥♥.
+                    <br>
+                    2. Did i waste my youth?:
+                    So this sounds a bit depressing but this is a thought that i had sometimes. but realisticially speaking, knowing myself, im really unsure of how much my life wouldve been different if i never started dota. I asume i wouldve been a bit further regarding social contacts but career/school-wise i highly doubt that it wouldve made a big difference. You gotta be realistic when thinking about stuff like this. Im not a very social guy. I dont like to put work into stuff i dont care about. The thoughts "lets learn music" or "lets study" wouldnt have EVER crossed my mind when i was 15. Im pretty sure if i wouldnt have started with dota i wouldve just been gooning around the city and abuse drugs, since thats a lot of fun to me. Back then i actually never even thought about working on something to improve, that whole dimension of "improving" wasnt even there for me. I just went to school got home and did fun stuff sometimes. Thats it. No goals. No aspiration, nothing. Dota changed that.
+                    <br>
+                    3. time invested into dota2:
+                    EVERY dota player that has spent more than 1000 hours into this game has had that thought of "oh man i shouldve learned something with this time.... i couldve been amazing now.." at some point. But everyone is disregarding the fact that grinding dota is something VERY EASY and comfortable to do, unlike studying or learning an instrument. Just think about what kind of game dota 2 is that spending 1000s of hours is something you do with pleasure. It's kind of insane thinking about it. Once i started studying more for school again i realized how much ♥♥♥♥♥♥♥ time 100 hours is. I garantue you that you will be a top student if youd put 20 hours a week into studying outside of school. But the big difference is that dota is just so much more fun and REWARDING.
+                    <br>
+                    REWARDING: dota 2 is ♥♥♥♥♥♥♥ REWARDING. you learn a new hero -> BAMM MMR. you start understanding how to farm -> M . M . R
+                    <br>
+                    YOUR RANK GOES ♥♥♥♥♥♥♥ UP. IT FEELS AMAZING. at school you get an A and you smile for about 10 minutes and then youre back to being miserable. theres no punishment for being mediocre. At least thats how i feel right now and im graduating this year(grades are OK(kinda good, not great)).
+                    <br>
+                    ReasoN I WROTE THIS: im downloading dota right now because my laptop is REALLY ♥♥♥♥♥♥ up adn deletes files something, so i needed something to do
+                    <br>
+                    <br>
+                    <br>
+                    CONCLUSION: AMAZING GAME, EATS ALL YOUR TIME, YOU WILL HAVE FUN(if you are competetive)
+                    hope someone will ever read this lol hit me up if you wanna chat
+                </div>
+                <div class="helpful-buttons">
+                    <div style="margin-left: 100px; margin-top: 10px;">
+                        <img src="editorial/like-i.png" id="like" onclick="">
+                        <img src="editorial/like-i.png" id="dislike" onclick="">
+                    </div>
+                </div>
+            </div>
+            <div class="comment-indiv-container">
+                <div class="comment-head">
+                    Leximencer
+                    <span>29 Feb, 2023</span>
+                    <div style="padding-top: 10px;">
+                        <img src="editorial/small-star2.png" style="height: 1rem;">
+                    </div>
+                </div>
+                <div class="comment-text-area">
+                    I could have mastered a useful skill in the amount of time I've put into this game,
+                     instead I get to look at my hours in the Steam stats and
+                      realize exactly how much self-abuse I have suffered at my own hands. This game will rip out your soul. -1/100 would not recommend.
+                </div>
+                <div class="helpful-buttons">
+                    <div style="margin-left: 100px; margin-top: 10px;">
+                        <img src="editorial/like-i.png" id="like" onclick="">
+                        <img src="editorial/like-i.png" id="dislike" onclick="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            const x = document.getElementsByClassName("btn")[0];
+            const btn = x.querySelector("button");
+            const post = document.querySelector(".post");
+            const widget = document.querySelector(".star-widget");
+            const editBtn = document.querySelector(".edit");
+            btn.onclick = ()=>{
+              widget.style.display = "none";
+              post.style.display = "block";
+              editBtn.onclick = ()=>{
+                widget.style.display = "block";
+                post.style.display = "none";
+              }
+              return false;
+            }
+        </script>
+    </div>
+    
+
+    <script src="js-lib/sub_nav.js"></script>
+    <script src="trailer.js"></script>
+</body>
+</html>

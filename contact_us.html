@@ -3,11 +3,29 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="Contact_Us_Style.css">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-  <title></title>
+  <link rel="stylesheet" href="common-css/sub_nav.css">
+  <title>Contact Us</title>
 </head>
 <body class="bg">
+
+  <header class="header">
+    <a href="#" class="logo">Lumi</a>
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon" ></i>
+    </label>
+    
+    <nav class="navbar">
+        
+            <a href="home.html">Home</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact_us.html" class="active">Contact Us</a>
+        
+    </nav>
+  </header>
+  
   <div class="wrapper">
     <form id="myForm">
       <div class="input-box">
@@ -36,20 +54,43 @@
 
     </form>
   </div>
+
+  <footer>
+    <div class="foot">
+        <div class="Social">
+            Our Scoial Media <br>
+            <img src="editorial/facebook.svg" alt="" class="focus">
+            <img src="editorial/twitter.svg" alt="" class="focus">
+            <img src="editorial/discord.svg" alt="" class="focus">
+        </div>
+        <span id="text">&copy;2017 Game Lumination Inc. All rights reserved. 
+            Game Luminations logo and the reviews are trademarks or registered trademarks of Games Lumination, Inc. 
+            in the United States of America and <br> elsewhere.
+            Other trademarks are property of their respective owners.
+            <a href="contact_us.html">Privacy Policy</a>
+            <a href="contact_us.html">Distriubtion</a>
+        </span>
+        <div style="height: 1px; background-color: rgb(49, 45, 45); margin: 20px 0;"></div>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="contact_us.html">About Us</a>
+        <a href="contact_us.html">Legal</a>
+        <a href="contact_us.html">Cookies</a>
+        
+        <a href="contact_us.html">Support</a>
+    </div>
+  </footer>
+
   <script>
      document.getElementById("myForm").addEventListener("submit", function (event) {
       event.preventDefault(); 
       const name = document.getElementById("Firstname").value;
-            const email = document.getElementById("email").value;
-            const description = document.getElementById("message").value;
+      const email = document.getElementById("email").value;
+      const description = document.getElementById("message").value;
 
-            // Check if all fields are filled
-            if (Firstname && email && message) {
-                // Show a success message
-                alert("Submitted successfully!");
-                location.href = 'home.html';
-            }
-          });
+      if (Firstname && email && message) {
+       alert("Submitted successfully!");      
+      }
+     });
   </script>
 </body>
 </html>

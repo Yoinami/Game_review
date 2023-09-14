@@ -6,21 +6,34 @@
     <title>Game Geek</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="common-css/sub_nav.css">
+    <link rel="stylesheet" href="common-css/platfrom.css">
+    <script src="js-lib/recommand.js"></script>
+    <script src="https://kit.fontawesome.com/5d2498171c.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div id="center-navigation">
-        <div id="navigation-flex">
-            <div class="current_page">Review</div>
-            <div class="other_pages">Coming Soon</div>
-            <div class="other_pages"><a href="game_of_the_year.html">Game Of The Year</a></div>
-        </div>
-    </div>
+<body onpageshow="Prepare(20)">
+    
+
+    <header class="header">
+        <a href="#" class="logo">Lumi</a>
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon" ></i>
+        </label>
+        
+        
+        <nav class="navbar">
+            <a href="home.html" style="color: navy;">Home</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </nav>
+    </header>
     
 
     <div class="wholeslider-wrap">
         <div class="flex">
             <div class="container">
-                <p>Recommendations</p>
+                <p>Game Recommendations</p>
 
                 <!--Slides-->
                 <div class="mySlides" onmouseover="showText()" onmouseleave="dontText()">
@@ -176,29 +189,131 @@
 
         <!--For Dots Under Slide Show-->
         <div style="text-align:center">
-            <a class="dot" onclick="currentSlide(1)"></a>
-            <a class="dot" onclick="currentSlide(2)"></a>
-            <a class="dot" onclick="currentSlide(3)"></a>
+            <a class="dot" onclick="changeSlide(1)"></a>
+            <a class="dot" onclick="changeSlide(2)"></a>
+            <a class="dot" onclick="changeSlide(3)"></a>
         </div>
     </div>
 
 
     <div class="below-container">
-        <p>More Contents</p>
-        <div class="below-container-flex">
-            
+        <div style="position: relative;">
+            <div id="more-sec" style="margin-top: 32px;" id="bbg">
+                <img src="editorial/727-01.png" alt="" id="bbg">
+                <p class="part-heading up-z">More Review</p>
+                <div class="bcontainer-wrapper">
+                    <div class="below-container-flex">
+                        <!--Added with java script-->
+                    </div>
+                    <div class="seemore-container" id="seemore" style="display: none;">
+                        
+                    </div>
+                    <a href="" style="padding-left: 30px; color: #a5a5a5;" class="up-z">see more...</a>
+                    
+                </div>
+            </div>
+            <button onclick="seemoreFun()" id="moreBtn" class="up-z">Expend &crarr;</button>
         </div>
-    </div>
+       
+        
+        
+        <div class="tag-browse-position" style="width: 100vw;">
+            <p class="part-heading">Browse by Catagories</p>
+            <div class="tag-flex-c">
+                <div class="tag-browse-container"><a href="" onclick="goTotag('Action')">
+                    <div class="indv-catagories" style="background-color: #aa3030;">
+                        <p>Action</p> 
+                    </div></a>
+                </div>
+                <div class="tag-browse-container"><a href="" onclick="goTotag('Simulation')">
+                    <div class="indv-catagories" style="background-color: #aaa630;">
+                        <p>Simulation</p>
+                    </div></a>
+                </div>
+                <div class="tag-browse-container"><a href="" onclick="goTotag('Strategy')">
+                    <div class="indv-catagories" style="background-color: #44aa30;">
+                        <p>Strategy</p>
+                    </div></a>
+                </div>
+                <div class="tag-browse-container"><a href="" onclick="goTotag('Racing')">
+                    <div class="indv-catagories" style="background-color: #30aa67;">
+                        <p>Racing</p> 
+                    </div></a>
+                </div>
+                <div class="tag-browse-container"><a href="" onclick="goTotag('FPS')">
+                    <div class="indv-catagories" style="background-color: #30a4aa;">
+                        <p>FPS</p>
+                    </div></a>
+                </div>
+                <div class="tag-browse-container"><a href="" onclick="goTotag('RPG')">
+                    <div class="indv-catagories" style="background-color: #307baa;">
+                        <p>RPG</p>
+                    </div></a>
+                </div>
+                <div class="tag-browse-container"><a href="" onclick="goTotag('Survival')">
+                    <div class="indv-catagories" style="background-color: #4e30aa;">
+                        <p>Survival</p>
+                    </div></a>
+                </div>
+                <div class="tag-browse-container"><a href="" onclick="goTotag('Rhythm')">
+                    <div class="indv-catagories" style="background-color: #aa3077;">
+                        <p>Rhythm</p>
+                    </div></a>
+                </div>
 
+                <div class="sign-up-container">
+                    <div>
+                        Sign in into your account for personalized game recommendations
+                        <button class="SignInBTN">Sign In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div>
+
+    </div>
     <footer>
         <div class="foot">
+            <div class="Social">
+                Our Scoial Media <br>
+                <img src="editorial/facebook.svg" alt="" class="focus">
+                <img src="editorial/twitter.svg" alt="" class="focus">
+                <img src="editorial/discord.svg" alt="" class="focus">
+            </div>
+            <span id="text">&copy;2017 Game Lumination Inc. All rights reserved. 
+                Game Luminations logo and the reviews are trademarks or registered trademarks of Games Lumination, Inc. 
+                in the United States of America and <br> elsewhere.
+                Other trademarks are property of their respective owners.
+                <a href="contact_us.html">Privacy Policy</a>
+                <a href="contact_us.html">Distriubtion</a>
+            </span>
+            <div style="height: 1px; background-color: rgb(49, 45, 45); margin: 20px 0;"></div>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="contact_us.html">About Us</a>
+            <a href="contact_us.html">Legal</a>
+            <a href="contact_us.html">Cookies</a>
             
-            <div id="text">&copy; 2017 Game Geeks Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
-VAT included in all prices where applicable.</div>
-            
+            <a href="contact_us.html">Support</a>
         </div>
     </footer>
+    
 
     <script src="home.js"></script>
+    <script>
+        var seeMore = document.getElementById("seemore");
+        var btn = document.getElementById("moreBtn");
+        function seemoreFun() {
+            if(seeMore.style.display == "none") {
+                seeMore.style.display = "flex";
+                btn.innerHTML = "collaps &uarr;"
+            } else {
+                seeMore.style.display = "none";
+                window.scrollBy(0, -650);
+                btn.innerHTML = "Expend &crarr;";
+            }
+        }
+    </script>
 </body>
 </html>

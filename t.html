@@ -1,13 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Read JSON File with Fetch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <style>
+        /* Style for the search container */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Style for the search box */
+        .search-box {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 400px;
+            max-width: 80%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for the search button */
+        .search-button {
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* Style for the Google logo */
+        .google-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <button id="loadDataButton">Load JSON Data</button>
-    <pre id="jsonData"></pre>
-    <div class="below-container-flex"></div>
-
-    <script src="js-lib/recommand.js"></script>
+    <div class="search-container">
+        <!-- Google Logo -->
+        <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_92x30dp.png" alt="Google Logo">
+        
+        <!-- Search Form -->
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" class="search-box" placeholder="Search Google">
+            <input type="submit" value="Google Search" class="search-button">
+        </form>
+    </div>
 </body>
 </html>

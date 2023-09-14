@@ -2,11 +2,17 @@ body{
     background-color: #050629;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(editorial/qwerty-01.svg);
+}
+html, body {
+    margin: 0;
+    padding: 0;
 }
 /* .item1{
     
 } */
 .whole {
+    
     width: 100%;
 }
 .background {
@@ -22,9 +28,10 @@ body{
 .background > img {
     object-fit: cover;
     width: 100%;
-    height: 600px;
+    height: 650px;
 }
 .main-container {
+    padding-top: 125px;
     width: 80%;
     margin: 0 auto;
 }
@@ -68,6 +75,8 @@ video {
 }
 .slides {
     min-width: 600px;
+    min-height: 332px;
+    object-fit: cover;
     max-height: 341px;
 }
 .slides > img {
@@ -122,6 +131,7 @@ table {
     position: relative;
     padding: 3px;
     margin-top: 3px;
+    margin-right: 3px;
     display: inline-block;
     white-space: nowrap;
     font-size: small;
@@ -162,11 +172,79 @@ about game
 }
 
 h2 {
-    border-image: linear-gradient(270deg ,#f6b83c00, #ffffff) 10;
-    border-width: 1px;
+    border-image: linear-gradient(270deg ,#f6b83c00, #15c8dc) 10;
+    border-width: 3px;
+    color: rgb(166, 215, 255);
     border-bottom-style: solid;
+    padding-bottom: 10px;
 }
 
+.saleswrap {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    
+}
+.playthegame {
+    width: 600px;
+    font-size: 1.5rem;
+    padding: 50px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: #040515;
+}
+#moreBtn {
+    float: right;
+    padding: 2px 15px;
+    width: 5rem;
+    border: none;
+    font-size: 1.5rem;
+    color: #8aaed5;
+    background-color: #03051c;
+    cursor: pointer;
+}
+.community-wrapper {
+    float: right;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #0f1114;
+    overflow: hidden;
+}
+.community-content {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.community-content a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: small;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(270deg ,#0e0e0e00, #2e3148);
+    border: 1px solid #222627;
+    display: block;
+}
+.community-content a:hover {
+    background-color: #4386d8;
+}
+#officialbutton {
+    width: 150px;
+    height: 50px;
+    color: inherit;
+    position: absolute;
+    top: 100%;
+    background-color: #13a86d;
+    left: 75%;
+    transform: translateY(-75%);
+    border-radius: 10px;
+    cursor: pointer;
+}
 /* 
 
 The Comment Part
@@ -179,16 +257,42 @@ The Comment Part
 .comment-indiv-container {
     background-color: #1C1D42;
     padding-bottom: 30px;
-    border-radius: 3px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 50px;
 }
 .comment-head {
-    font-size: 2rem;
-    padding: 10px 0;
+    font-size: 1.1rem;
+    padding: 10px 100px;
     background-color: #21234F;
+}
+.comment-head span {
+    font-size: 0.9rem;
+    padding-left: 30px;
+    border-left: 1px solid gray;
+    margin: 20px;
 }
 .comment-text-area {
     width: 70%;
-    padding-top: 10px;
+    padding-top: 50px;
     margin: 0 auto;
     line-height: 1.5rem;
+}
+.helpful-buttons {
+    padding-left: 5%;
+    padding-top: 30px;
+}
+#like, #dislike {
+    margin-left: 2vw;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+#dislike {
+    transform: rotate(180deg);
+    
+}
+#like:hover,
+#dislike:hover {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(170deg) brightness(104%) contrast(97%);
+    cursor: pointer;
 }

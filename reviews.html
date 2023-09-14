@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="common-css/sub_nav.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Lumi</a>
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon" ></i>
+        </label>
+        
+        
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="reviews.html" style="color: navy;">Reviews</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="whole-wrap">
+        <p style="font-size: 1.2rem;">Game Reviews</p>     
+        <div class="option" style="padding-left: 50px; padding-top: 20px;">
+            Sort By Genre
+            <select name="cars" id="drop" onchange="filterSelection(this.options[this.selectedIndex].text);">
+                <option value="all" class="btn">All</option>
+                <option value="Action" class="btn">Action</option>
+                <option value="simulation" class="btn">Simulation</option>
+                <option value="Strategy" class="btn">Strategy</option>
+                <option value="Puzzle" class="btn">Puzzle</option>
+                <option value="Racing" class="btn">Racing</option>
+                <option value="FPS" class="btn">FPS</option>
+                <option value="RPG" class="btn">RPG</option>
+                <option value="Rhythm" class="btn">Rhythm</option>
+            </select>
+        </div>
+        
+        <div class="div-container">
+            <div class="filterDiv 2D Sandbox Action Indie Adventure RPG" onclick="saveTrailer(100)">
+                <img src="image/terraria-preview.jpeg" alt="Terraria">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Terraria</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9/10</p>
+                        </div>
+                        <div class="type"><p>2D</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv FPS Shooter Action" onclick="saveTrailer(101)">
+                <img src="image/csgo.jpeg" alt="Counter-Strike: Global Offensive">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Counter-Strike: Global Offensive</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>8.8/10</p>
+                        </div>
+                        <div class="type"><p>FPS</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv FPS Shooter Survival Battle-Royle PvP" onclick="saveTrailer(102)">
+                <img src="image/pubg.jpeg" alt="PUBG: BATTLEGROUNDS">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>PUBG: BATTLEGROUNDS</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>5.7/10</p>
+                        </div>
+                        <div class="type"><p>FPS</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv FPS Action Battle-Royle PvP" onclick="saveTrailer(103)">
+                <img src="image/apexleg.jpeg" alt="Apex Legends">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Apex Legends</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>6.6/10</p>
+                        </div>
+                        <div class="type"><p>FPS</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Adventure Action Exploration" onclick="saveTrailer(104)">
+                <img src="image/plaguetale.jpeg" alt="A Plague Tale: Requiem">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>A Plague Tale: Requiem</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>8.9/10</p>
+                        </div>
+                        <div class="type"><p>Adventure</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Adventure Indie Puzzle" onclick="saveTrailer(105)">
+                <img src="image/stray.jpeg" alt="Stray">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Stray</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9.6/10</p>
+                        </div>
+                        <div class="type"><p>Adventure</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Adventure Story Co-op" onclick="saveTrailer(106)">
+                <img src="image/ittakestwo.jpeg" alt="It Takes Two">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>It Takes Two</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9.3/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv FPS Action" onclick="saveTrailer(107)">
+                <img src="image/deathloop.jpeg" alt="Deathloop">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Deathloop</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>7.5/10</p>
+                        </div>
+                        <div class="type"><p>FPS</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Adventure Story 3D Comedy" onclick="saveTrailer(108)">
+                <img src="image/psychonut2.jpeg" alt="Psychonauts 2">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Psychonauts 2</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9.2/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv 3D Platformer Action Adventure Sci-fi" onclick="saveTrailer(109)">
+                <img src="image/riftpart.jpeg" alt="Ratchet & Clank: Rift Apart">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Ratchet & Clank: Rift Apart</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>8.8/10</p>
+                        </div>
+                        <div class="type"><p>3D Platformer</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Horror Action Survival" onclick="saveTrailer(110)">
+                <img src="image/revillage.jpeg" alt="Resident Evil Village">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Resident Evil Village</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9.5/10</p>
+                        </div>
+                        <div class="type"><p>Horror</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv FPS Action Gore Shooter" onclick="saveTrailer(111)">
+                <img src="image/doometernal.jpeg" alt="Doom Eternal">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Doom Eternal</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>8.5/10</p>
+                        </div>
+                        <div class="type"><p>FPS</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Combact Mech" onclick="saveTrailer(112)">
+                <img src="image/amoured-core-preview.jpeg" alt="ARMORED CORE™ VI FIRES OF RUBICON™">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>ARMORED CORE™ VI FIRES OF RUBICON™</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>5/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Adventure Open-World Hard" onclick="saveTrailer(113)">
+                <img src="image/sekiro.jpeg" alt="Sekiro™: Shadows Die Twice">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Sekiro™: Shadows Die Twice</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9.6/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Adventure Open-World Story Exploration" onclick="saveTrailer(114)">
+                <img src="image/deathstrand.jpeg" alt="Death Stranding">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Death Stranding</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Horror Gore Action Adventure" onclick="saveTrailer(115)">
+                <img src="image/re2.jpeg" alt="Resident Evil 2">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Resident Evil 2</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9.7/10</p>
+                        </div>
+                        <div class="type"><p>Horror</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv RPG Open-World FPS Story" onclick="saveTrailer(116)">
+                <img src="image/tow.jpeg" alt="The Outer Worlds">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>The Outer Worlds</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>7.4/10</p>
+                        </div>
+                        <div class="type"><p>RPG</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Adventure RPG Mythology" onclick="saveTrailer(117)">
+                <img src="image/gow.jpeg" alt="God of War">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>God of War</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9.5/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Adventure RPG Open-World" onclick="saveTrailer(118)">
+                <img src="image/assc-odd.jpeg" alt="Assassin's Creed Odyssey">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Assassin's Creed Odyssey</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>8.7/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Indie Action Adventure" onclick="saveTrailer(119)">
+                <img src="image/celestle.jpeg" alt="Celeste">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Celeste</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9.7/10</p>
+                        </div>
+                        <div class="type"><p>Indie</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Adventure Open-World" onclick="saveTrailer(120)">
+                <img src="image/spidermanr.jpeg" alt="Marvel’s Spider-man Remastered">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Marvel’s Spider-man Remastered</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9.3/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Open-World RPG" onclick="saveTrailer(121)">
+                <img src="image/mhworld.jpeg" alt="Monster Hunter: World">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Monster Hunter: World</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>8/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Adventure Open-World" onclick="saveTrailer(122)">
+                <img src="image/rdr2.jpeg" alt="Red Dead Redemption 2">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Red Dead Redemption 2</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>8.6/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Sandbox Survival" onclick="saveTrailer(900)">
+                <img src="image/minecraft-preview.jpeg" alt="Minecraft">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Minecraft</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>9.4/10</p>
+                        </div>
+                        <div class="type"><p>Sandbox</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Sandbox Survival" onclick="saveTrailer(901)">
+                <img src="image/rain_world.jpeg" alt="Rain World">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Rain World</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>7/10</p>
+                        </div>
+                        <div class="type"><p>Sandbox</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Turn-based Story Strategy" onclick="saveTrailer(902)">
+                <img src="image/hsr-pre.webp" alt="Honkai: Star Rail">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Honkai: Star Rail</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>8.5/10</p>
+                        </div>
+                        <div class="type"><p>Turn-based</p></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Action Story RPG Hech and Slash" onclick="saveTrailer(903)">
+                <img src="image/honkaiimpact.png" alt="Honkai Impact 3rd">
+                <div class="under-cap">
+                    <div class="cap-wrapper">
+                        <p>Honkai Impact 3rd</p>
+                        <div>
+                            
+                            <img class="icon" src="editorial/small-star2.png">
+                            <p>8/10</p>
+                        </div>
+                        <div class="type"><p>Action</p></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="Social">
+                Our Scoial Media <br>
+                <img src="editorial/facebook.svg" alt="" class="focus">
+                <img src="editorial/twitter.svg" alt="" class="focus">
+                <img src="editorial/discord.svg" alt="" class="focus">
+            </div>
+            <span id="text">&copy;2017 Game Lumination Inc. All rights reserved. 
+                Game Luminations logo and the reviews are trademarks or registered trademarks of Games Lumination, Inc. 
+                in the United States of America and <br> elsewhere.
+                Other trademarks are property of their respective owners.
+                <a href="contact_us.html">Privacy Policy</a>
+                <a href="contact_us.html">Distriubtion</a>
+            </span>
+            <div style="height: 1px; background-color: rgb(49, 45, 45); margin: 20px 0;"></div>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="contact_us.html">About Us</a>
+            <a href="contact_us.html">Legal</a>
+            <a href="contact_us.html">Cookies</a>
+            
+            <a href="contact_us.html">Support</a>
+        </div>
+    </footer>
+    <script src="review.js"></script>
+    <script src="js-lib/recommand.js"></script>
+</body>
+</html>

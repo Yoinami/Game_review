@@ -1,6 +1,6 @@
 let slideIndex = 1;
 showSlides(slideIndex);
-
+setInterval(window.scrollBy(-100, 0), 100)
 function plusSlides(n) {
     if (n === undefined) {
         n = 1;
@@ -49,4 +49,8 @@ function dontText() {
     for(i=0; i < text.length; i++) {
         text[i].style.visibility= "hidden";
     }
+}
+function goTotag(n) {
+    localStorage.setItem("tag", n);
+    location.href = 'reviews.html';
 }
